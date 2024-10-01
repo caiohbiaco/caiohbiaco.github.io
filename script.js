@@ -1,9 +1,10 @@
 let numero = prompt("Digite um número");
 
-if (numero >0) {
-    console.log("Número positivo");
-} else if (numero <0) {
-    console.log("Número negativo");
-} else { 
-    console.log("Zero");
+function tabuada(numero) {
+    for (let i = 1; i <= 10; i++) {
+        const resultado = numero * i;
+        console.log('${numero} x ${i} = ${resultado}');
+    }
 }
+
+tabuada(numero);
