@@ -1,124 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review de Games</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="header-logo">Review de Games</div>
-        <ul class="nav-menu">
-            <li><a href="#home">Início</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
-    </header>
-    <div class="container">
-        <div class="newsletter">
-            <h3>Inscreva-se Agora</h3>
-            <p>Receba as últimas novidades e reviews de games diretamente no seu e-mail!</p>
-            <form>
-                <input type="email" placeholder="Digite seu e-mail" required>
-                <br>
-                <input type="submit" value="Receber Novidades">
-            </form>
-        </div>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula formulario JS</title>
+  
+    </head>
+    <body>
+        <h2>Formulário de Contato</h2>
 
-        <div class="ultimas-section">
-            <div class="titulo">
-                <h2>Atualizações Recentes</h2>
-            </div>
-            <div class="cards">
-                <div class="card">
-                    <div class="data-postada">
-                        <p>Postado 8 de setembro de 2024</p>
-                    </div>
-                    <div class="image-section">
-                        <img src="https://arkade.com.br/wp-content/uploads/2023/08/capsule_616x3531.jpg" alt="Imagem de um jogo">
-                    </div>
-                    <div class="content">
-                        <h4>BLACK MYTH: WUKONG</h4>
-                        <p>"Black Myth: Wukong" é um dos títulos mais aguardados dos últimos tempos, prometendo levar os jogadores a uma jornada épica baseada na lendária história do Rei Macaco, Sun Wukong, da clássica obra chinesa "Viagem ao Oeste". Desenvolvido pela Game Science, o jogo está ganhando destaque não apenas pela sua rica inspiração mitológica, mas também pela impressionante qualidade técnica e narrativa que promete entregar.</p>
-                        <a href="Leia Mais">Leia Mais</a>
-                    </div>
-                </div>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
 
-                <div class="card">
-                    <div class="data-postada">
-                        <p>Postado 25 de agosto de 2024</p>
-                    </div>
-                    <div class="image-section">
-                        <img src="https://store-images.s-microsoft.com/image/apps.22912.66873235889732843.685adf61-8959-427d-8c3e-e4a5ef4bf7f5.430d3a55-1a75-4b7a-8bd0-021b167285a1?q=90&w=480&h=270" alt="Imagem de um jogo">
-                    </div>
-                    <div class="content">
-                        <h4>BULLY - SCHOLARSHIP EDITION</h4>
-                        <p>“Bully” é um jogo lançado pela Rockstar Games em 2006 que oferece uma perspectiva única sobre a vida escolar. Ambientado na fictícia escola Bullworth Academy, o jogo combina elementos de aventura e ação com uma narrativa que explora a dinâmica escolar e a adolescência.</p>
-                        <a href="Leia Mais">Leia Mais</a>
-                    </div>
-                </div>
+            <br>
 
-                <div class="card">
-                    <div class="data-postada">
-                        <p>Postado 13 de agosto de 2024</p>
-                    </div>
-                    <div class="image-section">
-                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/0kRqUeSBIbQzz7cen3c989c6.jpg" alt="Imagem de um jogo">
-                    </div>
-                    <div class="content">
-                        <h4>THE LAST OF US</h4>
-                        <p>“The Last of Us” é uma obra-prima da Naughty Dog que redefiniu o gênero de jogos de ação e aventura quando foi lançado em 2013. Com uma narrativa profunda e personagens memoráveis, o jogo mergulha em um mundo pós-apocalíptico com uma humanidade que ressoa profundamente.</p>
-                        <a href="Leia Mais">Leia Mais</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="data-postada">
-                        <p>Postado 01 de agosto de 2024</p>
-                    </div>
-                    <div class="image-section">
-                        <img src="https://blog.br.playstation.com/tachyon/sites/4/2023/11/d97a47a0e112374ccfb1d0488f8d6179d9553b7d.jpg" alt="Imagem de um jogo">
-                    </div>
-                    <div class="content">
-                        <h4>THE LAST OF US 2</h4>
-                        <p>“The Last of Us Part II” continuou a história de Joel e Ellie, expandindo o universo e explorando novas profundidades emocionais e morais. Lançado em 2020, o jogo trouxe uma abordagem mais sombria e complexa para o enredo e os personagens.</p>
-                        <a href="Leia Mais">Leia Mais</a>
-                    </div>
-                </div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-                <div class="card">
-                    <div class="data-postada">
-                        <p>Postado 24 de julho de 2024</p>
-                    </div>
-                    <div class="image-section">
-                        <img src="https://s2-techtudo.glbimg.com/2-rfrO4fx4S35LAuxSmlNkIEIfE=/0x0:823x408/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2017/h/m/RHuJIGQfA6HI9QcUz8ZQ/captura-de-tela-2017-04-05-as-16.47.12.png" alt="Imagem de um jogo">
-                    </div>
-                    <div class="content">
-                        <h4>GTA San Andreas</h4>
-                        <p>“Grand Theft Auto: San Andreas” é um daqueles jogos que deixa uma marca indelével. Lançado em 2004, é mais do que apenas um jogo – é uma verdadeira viagem à Califórnia dos anos 90, com uma narrativa envolvente e um mundo aberto que parece ganhar vida.</p>
-                        <a href="Leia Mais">Leia Mais</a>
-                    </div>
-                </div>
+            <br>
 
-                <div class="card">
-                    <div class="data-postada">
-                        <p>Postado 15 de julho de 2024</p>
-                    </div>
-                    <div class="image-section">
-                        <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000012858/f4d4fd20c956621c4a342a8cade2e366f0e3cd43765bb52eccd0fea32b1606ce" alt="Imagem de um jogo">
-                    </div>
-                    <div class="content">
-                        <h4>RESIDENT EVIL 4</h4>
-                        <p>A história de "Resident Evil 4" gira em torno de Leon S. Kennedy, agora um agente do governo dos EUA, que é enviado em uma missão de resgate para salvar a filha do presidente, Ashley Graham, sequestrada por um culto sombrio em uma aldeia isolada na Espanha.</p>
-                        <a href="Leia Mais">Leia Mais</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <p>&copy; Este site publica opiniões próprias. Todas imagens e vídeos são marcas registradas dos seus respectivos proprietários.</p>
-    </footer>
-</body>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+            <script rel="stylesheet" src="script.js"></script>
+        </form>
+    </body>
 </html>
