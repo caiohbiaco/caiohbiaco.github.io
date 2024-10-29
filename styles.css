@@ -1,204 +1,65 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+.rotate {
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
 }
 
-main {
-    background-color: #0f48b1;
+.fade {
+    width: 150px;
+    height: 150px;
+    background-color: #e74c3c;
 }
 
-.container {
-    width: 100%;
-    background-color: white;
+.visible {
+    animation: fade 2s ease-in-out;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.nav-menu {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-menu li {
-    margin: 0 15px;
-}
-
-.nav-menu a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.nav-menu a:hover {
-    text-decoration: underline;
-}
-
-.newsletter {
-    background-color: #f1f1f1;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 300px;
-    z-index: 1000;
-}
-
-.newsletter h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.newsletter p {
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
-.newsletter input[type="email"] {
-    padding: 10px;
-    width: 90%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.newsletter input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.newsletter input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-.ultimas-section {
-    width: 85%;
-    margin: 20px auto;
-}
-
-.ultimas-section .titulo {
-    width: 60%;
-    text-align: center;
-    margin: auto;
-}
-
-.ultimas-section .titulo h2 {
-    font-size: 40px;
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    margin-top: 50px;
-}
-
-.ultimas-section .titulo p {
-    font-size: 18px;
-    color: #7e7e7e;
-    margin-top: 20px;
-}
-
-.titulo h2 { 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.cards {
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    margin: 25px auto;
-}
-
-.cards .card {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.data-postada {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.image-section img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.content {
-    padding: 15px 20px;
-}
-
-.content h4 {
-    font-size: 24px;
-    color: #222;
-    font-weight: 500;
-}
-
-.content p {
-    color: #7e7e7e;
-    font-size: 15px;
-}
-
-.content a {
-    text-decoration: none;
-    color: #fff;
-    margin-top: 12px;
-    display: inline-block;
-    background-color: #3a703a;
-    padding: 8px 15px;
-}
-
-@media screen and (max-width: 992px) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .cards {
-        grid-template-columns: 1fr;
+.pulse {
+    width: 150px;
+    height: 150px;
+    background-color: #27ae60;
+}
+
+.pulsing {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.zoom {
+    width: 150px;
+    height: 150px;
+    background-color: #9b59b6;
 }
 
-footer p {
-    margin: 0;
-    font-size: 15px;
+.zooming {
+    animation: zoom 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
 }

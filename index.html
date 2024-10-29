@@ -3,26 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <title>Aula formulario JS</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="styles.css">
   
     </head>
     <body>
-        <h2>Formulário de Contato</h2>
+        <h1>Aula Animações</h1>
+        <div class="rotate" id="rotating-div"></div>
+        <button onclick="rotateElement()">Girar</button>
 
-        <form id="contact-form">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
+        <br><br>
+        <div class="fade" id="fading-div"></div>
+        <button onclick="toggleFade()">Alternar Visibilidade</button>
 
-            <br>
+        <br><br>
+        <div class="pulse" id="pulsing-div"></div>
+        <button onclick="togglePulse()">Alternar Pulsar</button>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <br>
-
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Enviar</button>
-            <script rel="stylesheet" src="script.js"></script>
-        </form>
+        <br><br>
+        <div class="zoom" id="zooming-div"></div>
+        <button onclick="zoomIn()">Ampliar</button>
     </body>
 </html>
